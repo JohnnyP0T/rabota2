@@ -1,0 +1,3 @@
+/home/johnny/prog2/build/CMakeFiles/rebuild_cache.dir
+/home/johnny/prog2/build/CMakeFiles/edit_cache.dir
+/home/johnny/prog2/build/CMakeFiles/cmake_example_1.dir

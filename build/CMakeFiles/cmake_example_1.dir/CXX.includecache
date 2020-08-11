@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/johnny/prog2/Server.cpp
+Server.h
+/home/johnny/prog2/Server.h
+
+/home/johnny/prog2/Server.h
+sys/types.h
+-
+string.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+stdlib.h
+-
+stdio.h
+-
+ctype.h
+-
+time.h
+-
+fcntl.h
+-
+unistd.h
+-
+signal.h
+-
+arpa/inet.h
+-
+iostream
+-
+fstream
+-
+
