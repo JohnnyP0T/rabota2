@@ -40,13 +40,3 @@ iostream
 fstream
 -
 
-/home/johnny/dev/prog2/prog2.cpp
-thread
--
-chrono
--
-iostream
--
-Server.h
-/home/johnny/dev/prog2/Server.h
-

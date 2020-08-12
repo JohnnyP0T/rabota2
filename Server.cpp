@@ -59,9 +59,9 @@ void Server::StartServer()
             printf(buffer);
             //str = string(buffer);
             if(CheckSum(buffer) != 0)
-                cout << "errrror";
+                cout << "errrror" << endl;
             else
-                cout << "suck my dick";
+                cout << "suck my dick" << endl;
             write(nsock,buffer2, LBUF2);
             close(nsock);
             exit(0);
@@ -73,7 +73,8 @@ void Server::StartServer()
     {
         string str = string(msg);
         int ia = atoi(str.c_str());
-        if (strlen(msg) > 2 && (ia / 32 == 0))
+        cout << "strlen msg = " << strlen(msg) << "ia = " << ia / 32 << endl;
+        if (strlen(msg) > 2 && (ia % 32 == 0))
             return 0;
         else return 1;
     }
