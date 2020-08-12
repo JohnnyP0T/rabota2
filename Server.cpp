@@ -65,11 +65,14 @@ void Server::StartServer()
                 exit(1);
             }
 
-            printf(buffer);
+            //printf(buffer);
             if(CheckSum(buffer) != 0)
-                cout << "errrror" << endl;
-            else
-                cout << "suck my dick" << endl;
+                printf("Сумма больше двух символов или не кратна 32\n");
+            else{
+                printf("Данные получены.\n");
+                printf(buffer);
+                printf("Проверка пройдена успешно\n");
+            }
             write(nsock,buffer2, LBUF2);
 
             // Завершение дочернего процесса
@@ -85,9 +88,7 @@ void Server::StartServer()
  // Проверка суммы
 int Server::CheckSum(char *msg)
     {
-        string str = string(msg);
-        int ia = atoi(str.c_str());
-        cout << "strlen msg = " << strlen(msg) << "ia = " << ia / 32 << endl;
+        int ia = atoi(msg);
         if (strlen(msg) > 2 && (ia % 32 == 0))
             return 0;
         else return 1;
