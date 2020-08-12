@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/johnny/prog2/Server.cpp
+/home/johnny/dev/prog2/Server.cpp
 Server.h
-/home/johnny/prog2/Server.h
+/home/johnny/dev/prog2/Server.h
 
-/home/johnny/prog2/Server.h
+/home/johnny/dev/prog2/Server.h
 sys/types.h
 -
 string.h
@@ -39,4 +39,14 @@ iostream
 -
 fstream
 -
+
+/home/johnny/dev/prog2/prog2.cpp
+thread
+-
+chrono
+-
+iostream
+-
+Server.h
+/home/johnny/dev/prog2/Server.h
 

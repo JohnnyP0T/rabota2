@@ -63,10 +63,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johnny/prog2
+CMAKE_SOURCE_DIR = /home/johnny/dev/prog2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johnny/prog2/build
+CMAKE_BINARY_DIR = /home/johnny/dev/prog2/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -93,14 +93,14 @@ clean: CMakeFiles/cmake_example_1.dir/clean
 CMakeFiles/cmake_example_1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_example_1.dir/build.make CMakeFiles/cmake_example_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johnny/prog2/build/CMakeFiles --progress-num=1,2,3 "Built target cmake_example_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/johnny/dev/prog2/build/CMakeFiles --progress-num=1,2,3 "Built target cmake_example_1"
 .PHONY : CMakeFiles/cmake_example_1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cmake_example_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnny/prog2/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnny/dev/prog2/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cmake_example_1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnny/prog2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnny/dev/prog2/build/CMakeFiles 0
 .PHONY : CMakeFiles/cmake_example_1.dir/rule
 
 # Convenience name for target.

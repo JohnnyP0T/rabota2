@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/johnny/prog2
+CMAKE_SOURCE_DIR = /home/johnny/dev/prog2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/johnny/prog2/build
+CMAKE_BINARY_DIR = /home/johnny/dev/prog2/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnny/prog2/build/CMakeFiles /home/johnny/prog2/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnny/dev/prog2/build/CMakeFiles /home/johnny/dev/prog2/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnny/prog2/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnny/dev/prog2/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
