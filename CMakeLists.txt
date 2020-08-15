@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(cmake_example_1)
+project(program2)
 # ${PROJECT_NAME}
 # set(CMAKE_CXX_STANDART 11)
 set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y")

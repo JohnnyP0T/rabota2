@@ -12,10 +12,8 @@ void Server::StartServer()
     char buffer[LBUF];
     char buffer2[LBUF2] = "success\n";
     struct sockaddr_in client, server;
-    int n, sock, s_len, fil, fil2;
+    int n, sock;
     socklen_t c_len = LEN;
-    time_t t;
-    struct tm *timeinfo;
     static struct sigaction sact;
     sact.sa_handler = s_action;
     sigfillset(&(sact.sa_mask));
@@ -66,12 +64,14 @@ void Server::StartServer()
             }
 
             //printf(buffer);
-            if(CheckSum(buffer) != 0)
-                printf("Сумма больше двух символов или не кратна 32\n");
+            if(CheckSum(buffer) != 0){
+                printf(buffer);
+                printf(" :Сумма не больше двух символов или не кратна 32\n");
+            }
             else{
                 printf("Данные получены.\n");
                 printf(buffer);
-                printf("Проверка пройдена успешно\n");
+                printf(" Проверка пройдена успешно\n");
             }
             write(nsock,buffer2, LBUF2);
 
